@@ -16,7 +16,7 @@ Welcome to my GitHub! I'm a **Full Stack Developer** and **B.Tech Computer Scien
 - **Tools:** Git, GitHub, Visual Studio Code, Docker
 
 ## 📈 GitHub Stats
-![Satyamm's GitHub Stats](https://github-readme-stats.vercel.app/api?username=SatyammDahayat&show_icons=true&theme=radical)
+![Satyamm's GitHub Stats]()
 
 ## 🤝 Let's Connect
 - **LinkedIn:** [linkedin.com/in/satyammdahayat](https://www.linkedin.com/in/satyam-dahayat-207b922b3/)
