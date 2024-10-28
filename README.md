@@ -20,7 +20,6 @@ Welcome to my GitHub! I'm a **Full Stack Developer** and **B.Tech Computer Scien
 
 ## 🤝 Let's Connect
 - **LinkedIn:** [linkedin.com/in/satyammdahayat](https://www.linkedin.com/in/satyam-dahayat-207b922b3/)
-- **Twitter:** [@SatyammDahayat](https://twitter.com/SatyammDahayat)
 - **Email:** [satyam.dahayat@example.com](mailto:satyamdahayat@704@gmail.com)
 
 ---
