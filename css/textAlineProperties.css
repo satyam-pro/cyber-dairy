@@ -1,0 +1,42 @@
+h1{
+ text-align: center;
+ background-color:aqua;
+ font-size:50px;
+ border: solid;
+ width: 100%;
+ font-weight:800
+ 
+ 
+}
+p{
+    
+    text-align:justify;
+    font-size:15px;
+    line-height: 1.5;
+    font-family: arial,Didot;
+    
+    
+}
+h2{
+    text-align:right ;
+text-decoration:red overline;
+
+}
+
+h3{
+    text-align:left ;
+    text-decoration:aqua underline;
+}
+h4{
+    text-align:end ;
+    text-decoration:green line-through;
+}
+h5{ text-align: start ;
+    text-decoration: olive dotted;
+}
+h6{
+    
+}
+a{
+   text-decoration:none ;
+}
