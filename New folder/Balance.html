@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body>
+    <nav class="flex justify-between p-4 m-4 pb-0 max-md:flex-col max-md:justify-center">
+        <h1 class="text-2xl font-semibold max-md:mb-4 max-md:text-center">Income Expance Tracker</h1>
+        <ul class="font-semibold flex flex-wrap justify-center gap-6 max-md:text-xs text-center">
+            <li><a class="bg-blue-500 rounded-xl text-white p-2 px-4" href="index.html">Home</a></li>
+            <li><a class="bg-blue-500 rounded-xl text-white p-2 px-4" href="IO-category.html">I/O Category</a></li>
+            <li><a class="bg-blue-500 rounded-xl text-white p-2 px-4" href="income.html">Income</a></li>
+            <li><a class="bg-blue-500 rounded-xl text-white p-2 px-4" href="Expance.html">Expance</a></li>
+            <li><a class="bg-blue-800 rounded-xl text-white p-2 px-4" href="Balance.html">Balance Sheet</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <div class="grid grid-cols-2 p-2 m-8 gap-8 max-md:grid-rows-2 max-md:grid-cols-1 max-md:m-2 max-md:gap-2 max-md:p-0">
+
+        <div class="p-2 flex flex-col gap-4">
+            <h2 class="text-4xl font-semibold py-2 text-center">Income Sheet</h2>
+            <div class="">
+                <hr>
+                <table id="income-category-Data" class="table my-4 w-full text-center border-2">
+                    <thead class="table-header-group border-black border-b-2">
+                        <tr>
+                            <th>sr. no</th>
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot class="table-footer-group border"></tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="p-2 flex flex-col gap-4">
+            <h2 class="text-4xl font-semibold py-2 text-center">Expance Sheet</h2>
+            <div class="">
+                <hr>
+                <table id="expance-category-Data" class="table my-4 w-full text-center border">
+                    <thead class="table-header-group border-b-black border-2">
+                        <tr>
+                            <th>sr. no</th>
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot class="table-footer-group border"></tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="Net">
+
+    </div>
+</body>
+
+<script src="Balance.js"></script>
+</html>
