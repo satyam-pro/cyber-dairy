@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - RoomMe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-header {
+            background-color: #2575fc;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .profile-header h1 {
+            margin: 0;
+        }
+
+        .profile-header p {
+            font-size: 16px;
+        }
+
+        .profile-info {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .profile-info h3 {
+            color: #2575fc;
+        }
+
+        .profile-info p {
+            font-size: 16px;
+        }
+
+        .btn-edit {
+            background-color: #2575fc;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .btn-edit:hover {
+            background-color: #6a11cb;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2575fc;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <h1>Welcome, Satyam Dahayat</h1>
+        <p>Student Profile</p>
+    </div>
+
+    <!-- Profile Info -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="profile-info">
+                    <h3>Personal Information</h3>
+                    <p><strong>Name:</strong> Satyam Dahayat</p>
+                    <p><strong>Email:</strong> satyamdahayat704@gmail.com</p>
+                    <p><strong>Phone Number:</strong> +919109570347</p>
+                    <p><strong>Current Room Booking:</strong> PG in Delhi, Check-in: 01-01-2025, Check-out: 01-06-2025</p>
+
+                    <a href="edit-profile.html" class="btn-edit">Edit Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Manager Profile (Example) -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="profile-info">
+                    <h3>Manager Information</h3>
+                    <p><strong>Name:</strong> Richa jain</p>
+                    <p><strong>Email:</strong> Richajain55@gmail.com</p>
+                    <p><strong>Phone Number:</strong> +91 987 654 3210</p>
+                    <p><strong>Rooms Managed:</strong></p>
+                    <ul>
+                        <li>Luxury PG in Delhi - ₹12,000/month</li>
+                        <li>Comfortable Hostel in Mumbai - ₹10,000/month</li>
+                        <li>Spacious Flat in Bangalore - ₹20,000/month</li>
+                    </ul>
+
+                    <a href="AdminPanel.html" class="btn-edit">Edit Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 RoomIn | Developed by <strong>Satyam Dahayat</strong></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

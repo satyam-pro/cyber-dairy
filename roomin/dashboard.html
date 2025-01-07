@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - RoomMe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            height: 100vh;
+            background-color: #2575fc;
+            padding-top: 20px;
+            position: fixed;
+            width: 250px;
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar .nav-link {
+            color: white;
+            font-size: 18px;
+            padding: 15px 20px;
+            border-bottom: 1px solid #fff;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: #6a11cb;
+        }
+
+        .main-content {
+            margin-left: 270px;
+            padding: 30px;
+        }
+
+        .card-header {
+            background-color: #2575fc;
+            color: white;
+        }
+
+        .card-body {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-footer {
+            background-color: #f4f6f9;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: #2575fc;
+            margin-left: 10px;
+        }
+
+        .btn-primary {
+            background-color: #6a11cb;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #2575fc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3 class="text-center text-white">RoomIn</h3>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="RoomSearchPage.html">
+                    <i class="fas fa-search"></i> Find Rooms
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="manage-rooms.html">
+                    <i class="fas fa-list"></i> My Rooms (For Managers)
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profilePage(student & manager).html">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2>Welcome to Your Dashboard</h2>
+
+        <!-- Check if Student or Manager (this can be dynamic based on login) -->
+        <div id="role-specific-content">
+            <!-- For Students -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Search for Rooms</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Find available PGs, hostels, and flats. Apply for your preferred choice!</p>
+                            <button class="btn btn-primary" onclick="window.location.href='RoomSearchPage.html'">Search Rooms</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Applied Rooms</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Your applied rooms and their status.</p>
+                            <button class="btn btn-primary" onclick="window.location.href='view-applied-rooms.html'">View Applied Rooms</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- For Managers -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Manage My Rooms</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>List new rooms, edit or remove existing rooms.</p>
+                            <button class="btn btn-primary"onclick="window.location.href='manage-rooms.html'">Manage Rooms</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Bookings</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>View and manage bookings for your rooms.</p>
+                            <button class="btn btn-primary" onclick="window.location.href='view-booking.html'">View Bookings </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="card-footer">
+            <p>&copy; 2025 RoomIn | Developed by <strong>Satyam Dahayat</strong></p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a> | <a href="Term&conditionPage.Html">Terms & Conditions</a> |  <a href="AboutUsPage.html">AboutUsPage</a> |  <a href="FAQsPage.html">FAQsPage</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
